@@ -1,13 +1,7 @@
 <nav class="breadcrumbs">
   <a href="{{ site.baseurl }}/">Home</a>
-  {% if page.url contains '/boards/' %}
-    &gt; <a href="{{ site.baseurl }}/Sparrow-Hawk/">Board List</a>
-    {% if page.title %} &gt; {{ page.title }}{% endif %}
-  {% elsif page.url contains '/applications/' %}
-    &gt; <a href="{{ site.baseurl }}/applications/">Application List</a>
-    {% if page.title %} &gt; {{ page.title }}{% endif %}
-  {% elsif page.url contains '/support/' %}
-    &gt; <a href="{{ site.baseurl }}/support/">Support</a>
+  {% if page.title %}
+    &gt; {{ page.title }}
   {% endif %}
 </nav>
 
