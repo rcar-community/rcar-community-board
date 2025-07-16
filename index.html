@@ -55,7 +55,7 @@ applications:
 
 <div class="grid-4">
   {% assign total = page.applications | size %}
-  {% for board in page.applications %}
+  {% for application in page.applications %}
     <a href="{{ application.url }}" class="card">
       <p>{{ application.title }}</p>
       <img src="{{ application.image }}" alt="{{ application.title }}">
