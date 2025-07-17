@@ -5,33 +5,33 @@ boards:
   - title: Sparrow Hawk
     image: /rcar-community-board/images/Sparrow Hawk.png
     url: /rcar-community-board/Sparrow-Hawk/index.html
-    soc: SoC: R-Car V4H
+    soc: R-Car V4H
     purpose: For xxx
   - title: BoardB
     image: /rcar-community-board/images/Sparrow Hawk.png
     url: /rcar-community-board/BoardB/index.html
-    soc: SoC: xxx
+    soc: xxx
     purpose: For xxx
   - title: BoardC
     image: /rcar-community-board/images/Sparrow Hawk.png
     url: /rcar-community-board/BoardC/index.html
-    soc: SoC: xxx
+    soc: xxx
     purpose: For xxx
 applications:
   - title: ApplicationA
     image: /rcar-community-board/images/Sparrow Hawk.png
     url: /rcar-community-board/ApplicationA/index.html
-    soc: SoC: R-Car V4H
+    soc: R-Car V4H
     purpose: For xxx
   - title: ApplicationB
     image: /rcar-community-board/images/Sparrow Hawk.png
     url: /rcar-community-board/ApplicationB/index.html
-    soc: SoC: xxx
+    soc: xxx
     purpose: For xxx
   - title: ApplicationC
     image: /rcar-community-board/images/Sparrow Hawk.png
     url: /rcar-community-board/ApplicationC/index.html
-    soc: SoC: xxx
+    soc: xxx
     purpose: For xxx
 ---
 <div class="grid-4">
@@ -40,7 +40,7 @@ applications:
     <a href="{{ board.url }}" class="card">
       <p>{{ board.title }}</p>
       <img src="{{ board.image }}" alt="{{ board.title }}">
-      <p>{{ board.soc }}<br/>{{ board.purpose }}</p>
+      <p>SoC: {{ board.soc }}<br/>{{ board.purpose }}</p>
     </a>
   {% endfor %}
 
@@ -59,7 +59,7 @@ applications:
     <a href="{{ application.url }}" class="card">
       <p>{{ application.title }}</p>
       <img src="{{ application.image }}" alt="{{ application.title }}">
-      <p>{{ application.soc }}<br/>{{ application.purpose }}</p>
+      <p>SoC: {{ application.soc }}<br/>{{ application.purpose }}</p>
     </a>
   {% endfor %}
 
