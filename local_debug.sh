@@ -14,5 +14,11 @@ fi
 gem install jekyll bundler
 bundle init
 bundle add jekyll
-bundle exec jekyll serve --host 0.0.0.0 --baseurl /rcar-community-board
+
+BASE_URL="/rcar-community-board"
+# WA for Git bash on windows
+if [[ "$(uname | grep MINGW)" != "" ]]; then
+    BASE_URL="/${BASE_URL}"
+fi
+bundle exec jekyll serve --host 0.0.0.0 --baseurl ${BASE_URL}
 
